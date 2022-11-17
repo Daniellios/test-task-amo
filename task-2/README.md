@@ -7,3 +7,7 @@
 > npm i
 
 > npm run dev
+
+
+# Просмотр 
+https://test-task-c1y2ixxpn-daniellios.vercel.app/
