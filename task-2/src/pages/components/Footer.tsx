@@ -88,9 +88,9 @@ const Footer = () => {
         <p>Москва, Путевой проезд 3с1, к 902</p>
         <span className="mt-[50px] text-left  text-[12px] sm:text-right ">
           ©WELBEX {new Date().getFullYear()}. Все права защищены. <br />
-          <a href="/" className="underline">
+          <Link href="/" className="underline">
             Политика конфиденциальности
-          </a>
+          </Link>
         </span>
       </div>
     </footer>
