@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen w-full min-w-[320px] overflow-x-hidden bg-[#0E1014];
+  }
+
+  #__next {
+    @apply main-bg h-full  w-full font-moserrat text-base text-[#E4E5EA];
+  }
+
+  a {
+    @apply text-base;
+  }
+
+  p {
+    @apply text-[#E4E5EA];
+  }
+
+  h2 {
+    @apply font-inter text-[18px] text-[#E4E5EA];
+  }
+
+  li {
+    @apply text-base;
+  }
+
+  h3 {
+    @apply font-inter text-[14px] font-bold uppercase text-[#656566];
+  }
+}
+
+@layer components {
+  .text-line {
+    @apply block h-[2px] w-[10px] bg-gradient-to-r from-[#FCB045] to-[#FD1D1D] sm:hidden;
+  }
+
+  .content-grid-text {
+    @apply flex w-max items-center gap-1 text-left text-[13px] uppercase sm:block sm:w-auto sm:text-right sm:text-[18px];
+  }
+
+  .main-bg {
+    @apply bg-none bg-no-repeat 
+    sm:bg-[url('/purple-ball.png'),_url('/red-ball.png'),_url('/red-ball-small.png'),_url('/red-light.png'),_url('/purple-light.png')]  sm:bg-[position:top,_left_32%_top_55px,_top_65%_right_35%,_left,_top_left_10%];
+  }
+
+  .mobile-bg {
+    @apply bg-[url('/bg-mobile.png')] bg-[length:100%] bg-[position:left_100%] bg-no-repeat;
+  }
+}
